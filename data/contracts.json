@@ -1,0 +1,62 @@
+{
+  "schemas": [
+    {
+      "schema_id": "v1",
+      "fields": [
+        {
+          "field_id": 1,
+          "name": "sample_id",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "field_id": 7,
+          "name": "activity",
+          "type": "decimal(8,3)",
+          "nullable": true
+        },
+        {
+          "field_id": 8,
+          "name": "detail",
+          "type": "struct",
+          "nullable": true,
+          "children": [
+            {
+              "field_id": 9,
+              "name": "operator",
+              "type": "string",
+              "nullable": true
+            },
+            {
+              "field_id": 10,
+              "name": "instrument",
+              "type": "string",
+              "nullable": true
+            }
+          ]
+        },
+        {
+          "field_id": 11,
+          "name": "replicates",
+          "type": "list<struct>",
+          "element_id": 12,
+          "children": [
+            {
+              "field_id": 13,
+              "name": "dose",
+              "type": "int32",
+              "nullable": false
+            },
+            {
+              "field_id": 14,
+              "name": "signal",
+              "type": "decimal(8,3)",
+              "nullable": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_seed": "seed的decimal是无损十进制原文，物理Parquet以string保存；v1绑定还声明此legacy编码，真正写入端应按契约类型写入，禁止猜测当前列名"
+}

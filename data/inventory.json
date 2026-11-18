@@ -1,0 +1,27 @@
+{
+  "dataset": "q006",
+  "files": [
+    {
+      "file": "assays.parquet",
+      "table": "assays",
+      "sha256": "a22c793e60cf56e242f5e706ba9bfe55243cf4804766721b4092ee3ef9b5d82d",
+      "bytes": 2048,
+      "rows": 1
+    },
+    {
+      "file": "seed.json",
+      "sha256": "b8fad0ac62b49bd965204d030715a0eab5dd6a081e4da0f2f9b2f3cb8a14fa81",
+      "bytes": 281
+    },
+    {
+      "file": "events.json",
+      "sha256": "ae2f1fdc0c051a9e6bd7e122c90e4797f8a0a629667f723352b470b2a6d36c60",
+      "bytes": 376
+    },
+    {
+      "file": "contracts.json",
+      "sha256": "7cb3953ea5fed99bc89311a91a9a609a0125098432e7bb96f690f453e7c1cf9d",
+      "bytes": 1579
+    }
+  ]
+}

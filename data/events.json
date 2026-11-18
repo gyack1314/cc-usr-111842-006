@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "rename",
+    "field_id": 7,
+    "from": "activity",
+    "to": "signal"
+  },
+  {
+    "kind": "drop",
+    "field_id": 7
+  },
+  {
+    "kind": "add",
+    "field_id": 19,
+    "name": "activity",
+    "type": "decimal(12,3)",
+    "default": "0.000"
+  },
+  {
+    "kind": "writer_commit",
+    "schema": "v1",
+    "writer": "old-writer"
+  }
+]

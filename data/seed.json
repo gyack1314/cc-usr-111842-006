@@ -1,0 +1,18 @@
+{
+  "assays": [
+    {
+      "sample_id": "S1",
+      "activity": "1.230",
+      "detail": {
+        "operator": null,
+        "instrument": "I1"
+      },
+      "replicates": [
+        {
+          "dose": 1,
+          "signal": "0.5"
+        }
+      ]
+    }
+  ]
+}
